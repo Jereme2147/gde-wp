@@ -1,0 +1,509 @@
+/* 
+Theme Name: Glen.Davis.Electric
+Author: Jereme Daniels
+Author URI: http://jeremedaniels.com
+Description: Custom theme for Glen.Davis.Electric
+Version: 1.0
+*/
+@import './styles/reset.scss'; 
+@import './styles/hamburger.scss';
+$black: rgba(16, 14, 16, 1);
+$white: rgba(236, 234, 237, 1);
+$darkGrey: rgba(43, 48, 58, 1);
+$yellow: rgba(249, 195, 53, 1);
+$blue: rgba(28, 63, 140, 1);
+$h1: 'Neuton', serif;
+$h2: 'Montserrat', sans-serif;
+$p: 'Noto Sans', sans-serif;
+
+// delete all below, just verifying connection and fonts. 
+h1 {
+    font-family: $h1;
+}
+h2 {
+    font-family: $h2;
+}
+p, h3, h4, h5{
+    font-family: $p;
+}
+.container {
+    width: 100%;
+    height: 200vh; // remove
+    background: $white;
+}
+// **************** Banner Div ******************
+.banner-div {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.very-wide-banner {
+    display: none;
+    @include x-large-desktop {
+        display: block;
+    }
+}
+.xlarge-banner {
+    display: none;
+    @include large-desktop() {
+        display: block;
+    }
+    @include banner-desktop() {
+        display: none;
+    }
+}
+.large-banner {
+    display: none;
+    @include banner-desktop() {
+        display: block;
+    }
+    @include large-desktop() {
+        display: none;
+    }
+}
+.small-banner {
+    @include banner-desktop() {
+        display: none;
+    }
+    @include large-desktop() {
+        display: none;
+    }
+    @include x-large-desktop() {
+        display: none;
+    }
+}
+.banner-text {
+    position: relative;
+    width: 100vw;
+    // height: 200px;
+    // top: 120px;
+    // left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s; // could cause issues.
+    div {
+        width: 90%;
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.4rem;
+        color: $white;
+        text-shadow: 4px 4px 4px $black;
+        @include desktop() {
+            font-size: 6rem;
+        }
+        @include tablet() {
+            font-size: 4rem;
+        }
+    }
+    p {
+        width:80%;
+        text-align: end;
+        color: $white;
+        text-shadow: 4px 4px 4px $black;
+        @include desktop(){
+            font-size: 3rem;
+        }
+    }
+}
+
+// **************** end Banner Div ******************
+// **************** Navigation Div ******************
+.desktop-menu {
+    display: none;
+    @include large-desktop() {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        align-items: center;
+        #menu-ul {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            font-size: 1.3rem;
+            a {
+                text-decoration: none;
+                color: $darkGrey;
+                &:hover {
+                    text-decoration: underline;
+                }
+                h2 {
+                    font-family: $h1;
+                }
+            }
+        }
+    }
+    @include x-large-desktop() {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        align-items: center;
+        #menu-ul {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            font-size: 1.3rem;
+            a {
+                text-decoration: none;
+                color: $darkGrey;
+                &:hover {
+                    text-decoration: underline;
+                }
+                h2 {
+                    font-family: $h1;
+                }
+            }
+        }
+    }
+    @include banner-desktop() {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        align-items: center;
+        #menu-ul {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            font-size: 1rem;
+            @include small-desktop() {
+                font-size: .8rem;
+            }
+            a {
+                text-decoration: none;
+                color: $black;
+                &:hover {
+                    text-decoration: underline;
+                }
+                h2 {
+                    font-family: $h1;
+                }
+            }
+        }
+    }
+}
+#navbar {
+    width: 100%;
+    height: 75px;
+    background: url("./images/nav-background.png");
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.4s;
+    @include desktop() {
+        height: 125px;
+        
+    }
+}
+.nav-box {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 4px solid $black;
+}
+.nav-title {
+    font-size: 1.2rem;
+    // background: blue;
+    // color: $black;
+    color: $darkGrey;
+    display: flex;
+    align-items: center;
+    h1 {
+        color: $darkGrey;
+    }
+    @include large-desktop() {
+        font-size: 2rem;
+        width: 40%;
+    }
+    @include banner-desktop() {
+        width: 50%;
+        font-size: 2rem;
+    }
+    @include tiny-phone() {
+        width: 80%;
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    @include tablet() {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+.hamburger-div {
+    // background: red;
+    display: flex;
+    align-items: center;
+    @include desktop(){
+        display: none;
+    }
+    button {
+        outline: none;
+    }
+}
+.mobile-menu {
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    background: $darkGrey;
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        color: $white;
+        li {
+            margin: 10px 0;
+        }
+        li a{
+            color: $white;
+            text-decoration: none;
+            margin: 10px 0;
+            text-shadow: 1px 1px 1px $blue;
+        }
+    }
+}
+
+// **************** end Navigation Div ******************
+// **************** landing services Div ******************
+.landing-service-card {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    background: $white;
+    @include desktop() {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+.landing-service-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include desktop() {
+        width: 80%;
+        
+    }
+}
+.landing-service-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        color: $darkGrey;
+        text-align: center;
+        width: 80%;
+        border-bottom: 3px solid $blue;
+        @include desktop() {
+            font-size: 3rem;
+            width: 60%;
+        }
+    }
+    h3 {
+        color: $darkGrey;
+        text-align: center;
+        width: 100%;
+        @include desktop() {
+            font-size: 2.5rem;
+        }
+    }
+    p {
+        color: $darkGrey;
+        padding: 5px 0 5px 5px;
+        @include desktop() {
+            font-size: 1.3rem;
+            padding: 15px 10px 15px 15px;
+        }
+    }
+}
+.landing-service-image {
+    align-self: center;
+    justify-self: center;
+    max-width: 800px;
+}
+// **************** end landing services Div ******************
+// **************** blog section - landing ******************
+.blog-section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: $white;
+}
+.landing-blog-container {
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid $blue;
+    margin-top: 20px;
+    h1 {
+        color: $blue;
+        text-align: center;
+        text-shadow: 1px 1px 2px $yellow;
+        font-size: 2rem;
+    }
+    @include desktop() {
+        width: 70%;
+        margin-top: 40px;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+.landing-blog-meta {
+    h2 {
+        color: $blue;
+        margin-left: 5px;
+        @include desktop() {
+            font-size: 2rem;
+            margin-left: 15px;
+        }
+    }
+    h3 {
+        color: $darkGrey;
+        margin-left: 5px;
+        @include desktop() {
+            font-size: 2rem;
+            margin-left: 15px;
+        }
+    }
+    h4 {
+        color: $darkGrey;
+        margin-left: 5px;
+        @include desktop() {
+            font-size: 2rem;
+            margin-left: 15px;
+        }
+    }
+}
+.landing-blog-content {
+    p {
+        color: $darkGrey;
+        margin: 5px;
+        padding-left: 5px;
+        border-left: 5px solid $blue;
+        @include desktop() {
+            // font-size: 2rem;
+            margin: 15px;
+            border-left: 10px solid $blue;
+        }
+    }
+}
+.landing-blog-links {
+    width: 150px;
+    height: 40px;
+    background: $blue;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px darken($white, 30%);
+    border-top: 3px solid lighten($blue, 10%);
+    border-left: 3px solid lighten($blue, 10%);
+    margin: 5px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        border-top: 3px solid $blue;
+        border-left: 3px solid $blue;
+        box-shadow: none;
+    }
+     a {
+        text-decoration: none;
+    }
+    div {
+        width: 100%;
+
+        h3 {
+            width: 100%;
+            text-align: center;
+            color: $white;
+            
+        }
+    }
+}
+
+// **************** end blog section - landing ******************
+// **************** footer section - landing ******************
+footer {
+    width: 100%;
+    background: $darkGrey;
+    position: relative;
+}
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop() {
+        padding-top: 20px;
+    }
+}
+.footer-phone {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid $white;
+    h2, h3 {
+        color: $white;
+    }
+    h2 {
+        text-shadow: 1px 1px 1px $yellow;
+        @include desktop() {
+            font-size: 3rem;
+        }
+    }
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    ul {
+        list-style-type: none;
+        a {
+            color: $white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    @include desktop() {
+        flex-direction: row;
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+// **************** end footer section - landing ******************
