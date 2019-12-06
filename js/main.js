@@ -16,9 +16,15 @@ jQuery(document).ready(function($) {
         $(".hamburger").toggleClass("is-active");
         menu();
     })
-    $(".banner-div").ready(function() {
-        loadBanner();
-    })
+    let bannerDiv = $('.banner-div');
+    if (bannerDiv.length){
+        console.log(bannerDiv);
+        $(".banner-div").ready(function () {
+            loadBanner();
+        })
+    }
+    
+
     
  
 })
@@ -41,10 +47,10 @@ function menu(){
     const opacity = jQuery(".mobile-menu").css('opacity');
     if (opacity == '0') {
         jQuery('.mobile-menu').animate({ opacity: '1' }, 500);
-        jQuery('.mobile-menu').css({ pointerEvents: 'auto' });
+        jQuery('.mobile-menu div:first-child').css({ pointerEvents: 'auto' });
     } else {
         jQuery('.mobile-menu').animate({ opacity: '' }, 500);
-        jQuery('.mobile-menu').css({ pointerEvents: 'none' });
+        jQuery('.mobile-menu div:first-child').css({ pointerEvents: 'none' });
     }
 }
 //******************Scroll actions functions */
