@@ -37,33 +37,6 @@
             <?php 
                 wp_nav_menu( array ( 'theme_location' => 'primary_menu' ) );
             ?>
-            <!-- <ul>
-                <li>
-                    <a href="#">
-                        <h2>Home</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h2>What's in a Name</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h2>SERVICES</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h2>GALLERY</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h2>CONTACT</h2>
-                    </a>
-                </li>
-            </ul> -->
         </div>
     </div>
 </nav>

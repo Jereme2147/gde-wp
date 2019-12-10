@@ -25,15 +25,120 @@ p, h3, h4, h5{
     // height: 200vh; // remove
     background: $white;
 }
-//***********About / what's in a name ****************
+//***********standard page / what's in a name ****************
 .page-box {
+    background: $white;
+    border-radius: 3px;
+    @include desktop() {
+        margin-top: 125px;
+    }
     margin: auto;
-    margin-top: 125px;
+    margin-top: 75px;
     max-width: 1000px;
     position: relative;
     p {
         padding: 10px 5px;
         color: $darkGrey;
     }
-    
+    blockquote {
+        border-left: 5px solid $blue;
+    }
+} 
+//***********end - standard / what's in a name ****************
+//***********begin Contact ****************
+.general-banner-img {
+    width: 100vw;
 }
+.page-box-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+    @include desktop() {
+        // margin-top: 125px;
+    }
+    div:nth-child(2){
+        border-bottom: 2px solid $yellow;
+        @include desktop() {
+            border-bottom: none;
+        }
+    }
+    margin: auto;
+    // margin-top: 75px;
+    max-width: 1000px;
+    position: relative;
+    color: $darkGrey;
+    p {
+        padding: 10px 5px;
+        color: $darkGrey;
+        text-align: center;
+    }
+    blockquote {
+        border-left: 5px solid $blue;
+    }
+    h2 {
+        font-size: 1.2rem;
+        @include desktop() {
+            font-size: 2rem;
+        }
+    }
+    h3 {
+        text-shadow: 1px 1px 2px lighten($yellow, 20%);
+        @include desktop() {
+            font-size: 1.5rem;
+        }
+    }
+    h1, h2, h3 {
+        color: $darkGrey;
+        text-align: center;
+
+    }
+} 
+#wpcf7-f29-p11-o1 {
+    label {
+        color: black;
+        text-shadow: 1px 1px 1px $white;
+        
+    }
+    input {
+        background: $blue;
+        border: none;
+        border-radius: 3px;
+        color: $white;
+        width: 70px;
+        height: 40px;
+        // box-shadow: -1px -1px 1px lighten($white, 10%);
+    }
+    input:last-child {
+        width: 80%;
+        border-bottom: none;
+        border-bottom: 1px solid $blue;
+        background: $white;
+        // box-shadow: 0 1px $blue;
+        outline: none;
+        border-radius: 0;
+        &:hover {
+            background: lighten($white, 3%);
+        }
+        &:active {
+            background: lighten($white, 3%);
+            outline: none;
+        }
+    }
+    textarea {
+        background: $white;
+        border: 1px solid $blue;
+        outline: none;
+        width: 80%;
+        &:active {
+            background: lighten($white, 3%);
+            
+        }
+    }
+}
+//***********end contact ****************
+//***********blog page ****************
+.blog-expanded {
+    display: none;
+}
+//***********end blog page ****************

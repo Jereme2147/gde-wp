@@ -28,6 +28,15 @@ jQuery(document).ready(function($) {
     
  
 })
+function expandBlog(num) {
+    // console.log(num);
+    let block = jQuery(`#expand-${num}`);
+    let blockTwo = jQuery(`#summary-expand-${num}`);
+    // console.log(block);
+    // block.css({ display: 'block'});
+    block.toggle("slow");
+    blockTwo.toggle("slow");
+}
     //sets the banner text height. replaces 20 media queries.
 function loadBanner() {
     let $el = jQuery('.banner-div');

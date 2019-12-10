@@ -455,6 +455,7 @@ select {
   flex-direction: row;
   justify-content: center;
   transition: 0.4s;
+  top: 0;
 }
 
 @media (min-width: 950px) {
@@ -861,13 +862,132 @@ p, h3, h4, h5 {
 }
 
 .page-box {
+  background: #eceaed;
+  border-radius: 3px;
   margin: auto;
-  margin-top: 125px;
+  margin-top: 75px;
   max-width: 1000px;
   position: relative;
+}
+
+@media (min-width: 950px) {
+  .page-box {
+    margin-top: 125px;
+  }
 }
 
 .page-box p {
   padding: 10px 5px;
   color: #2b303a;
+}
+
+.page-box blockquote {
+  border-left: 5px solid #1c3f8c;
+}
+
+.general-banner-img {
+  width: 100vw;
+}
+
+.page-box-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eceaed;
+  margin: auto;
+  max-width: 1000px;
+  position: relative;
+  color: #2b303a;
+}
+
+.page-box-contact div:nth-child(2) {
+  border-bottom: 2px solid #f9c335;
+}
+
+@media (min-width: 950px) {
+  .page-box-contact div:nth-child(2) {
+    border-bottom: none;
+  }
+}
+
+.page-box-contact p {
+  padding: 10px 5px;
+  color: #2b303a;
+  text-align: center;
+}
+
+.page-box-contact blockquote {
+  border-left: 5px solid #1c3f8c;
+}
+
+.page-box-contact h2 {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 950px) {
+  .page-box-contact h2 {
+    font-size: 2rem;
+  }
+}
+
+.page-box-contact h3 {
+  text-shadow: 1px 1px 2px #fce098;
+}
+
+@media (min-width: 950px) {
+  .page-box-contact h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.page-box-contact h1, .page-box-contact h2, .page-box-contact h3 {
+  color: #2b303a;
+  text-align: center;
+}
+
+#wpcf7-f29-p11-o1 label {
+  color: black;
+  text-shadow: 1px 1px 1px #eceaed;
+}
+
+#wpcf7-f29-p11-o1 input {
+  background: #1c3f8c;
+  border: none;
+  border-radius: 3px;
+  color: #eceaed;
+  width: 70px;
+  height: 40px;
+}
+
+#wpcf7-f29-p11-o1 input:last-child {
+  width: 80%;
+  border-bottom: none;
+  border-bottom: 1px solid #1c3f8c;
+  background: #eceaed;
+  outline: none;
+  border-radius: 0;
+}
+
+#wpcf7-f29-p11-o1 input:last-child:hover {
+  background: #f3f2f4;
+}
+
+#wpcf7-f29-p11-o1 input:last-child:active {
+  background: #f3f2f4;
+  outline: none;
+}
+
+#wpcf7-f29-p11-o1 textarea {
+  background: #eceaed;
+  border: 1px solid #1c3f8c;
+  outline: none;
+  width: 80%;
+}
+
+#wpcf7-f29-p11-o1 textarea:active {
+  background: #f3f2f4;
+}
+
+.blog-expanded {
+  display: none;
 }
