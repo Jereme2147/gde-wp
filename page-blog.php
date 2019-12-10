@@ -6,34 +6,37 @@
         require_once(plugin_dir_path(__FILE__) . '/assets/blog-banner.php');
     ?>
 </div>
+<!-- banner text -->
 <?php 
     require_once(plugin_dir_path(__FILE__) . '/assets/blog-banner-text.php');
 ?>
-<section class="summary-section section-divider">
+<section >
 <?php
  $the_query = new WP_Query( array('posts_per_page'=>5,
                                  'post_type'=>'post',
                                  'paged' => get_query_var('paged') ? get_query_var('paged') : 1) 
                             ); 
+                            //blogNum is used for a unique div ID or key
                             $blogNum = 0;
                             ?>
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
- <div class="page-box">
+ <div class="page-box-blog">
                     <div class="blog-page-meta">
-                        <h3><?php echo get_the_date();?></h3>
-                        <h3><?php the_title(); echo "  " . $blogNum ?></h3>
+                        <p><?php echo get_the_date();?></p>
+                        <h2><?php the_title();?></h2>
                         <h3>Posted by <?php echo get_the_author();?></h3>
                     </div>
                     <div class="summary-content" id="summary-expand-<?php echo $blogNum ?>">
+                        <!-- disappears on click -->
                         <p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
                     </div>
                     <div class="blog-expanded" id="expand-<?php echo $blogNum ?>">
+                    <!-- no visible until clicked -->
                         <?php 
                             echo the_content();
                         ?>
                     </div>
-                    <div class="summary-links no-link" onclick="expandBlog(<?php echo $blogNum ?>)">
-                        <!-- <h3>Previous Workouts</h3> -->
+                    <div class="blog-summary-links" onclick="expandBlog(<?php echo $blogNum ?>)">
                         <h3>View</h3>
                     </div>
                     <?php $blogNum = $blogNum + 1; ?>

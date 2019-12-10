@@ -28,12 +28,10 @@ jQuery(document).ready(function($) {
     
  
 })
+//backend assigns a dynamic id (num) to posts. This toggles the excerpt and content.
 function expandBlog(num) {
-    // console.log(num);
     let block = jQuery(`#expand-${num}`);
     let blockTwo = jQuery(`#summary-expand-${num}`);
-    // console.log(block);
-    // block.css({ display: 'block'});
     block.toggle("slow");
     blockTwo.toggle("slow");
 }

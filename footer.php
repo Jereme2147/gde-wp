@@ -7,7 +7,10 @@
         <h3>Foscoe NC, 28646</h3>
     </div>
     <div class="footer-links">
-        <ul>
+        <?php 
+                wp_nav_menu( array ( 'theme_location' => 'footer_menu' ) );
+        ?>
+        <!-- <ul>
             <li>
                 <h3><a href="#">Home</a></h3>
             </li>
@@ -27,7 +30,7 @@
                 <h3><a href="#">Blog</a></h3>
             </li>
             
-        </ul>
+        </ul> -->
     </div>
     <div class="footer-dev">
 

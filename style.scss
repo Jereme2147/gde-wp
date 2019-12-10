@@ -141,4 +141,114 @@ p, h3, h4, h5{
 .blog-expanded {
     display: none;
 }
+.page-box-blog {
+    background: $white;
+    border-radius: 3px;
+    border-bottom: 2px solid $blue;
+    @include desktop() {
+        margin-top: 125px;
+        border-bottom: none;
+        border-left: 10px solid $blue;
+        // border-right: 10px solid $blue;
+        padding: 10px;
+    }
+    margin: auto;
+    margin-top: 75px;
+    max-width: 1000px;
+    position: relative;
+    p {
+        padding: 5px 5px;
+        color: $darkGrey;
+    }
+    blockquote {
+        border-left: 5px solid $blue;
+    }
+    h2, h3 {
+        padding: 5px 1px;
+        color: $darkGrey;
+    }
+} 
+.blog-summary-links {
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 1px;
+    h3{
+        width: 100%;
+        text-align: center;
+        color: $blue;
+        text-shadow: 1px 1px 2px $darkGrey;
+        font-size: 2rem;
+    }
+    &:hover {
+        background: darken($white, 10%);
+        margin: 0;
+        border: 1px solid $yellow;
+        
+    }
+}
 //***********end blog page ****************
+// **************** footer section - landing ******************
+footer {
+    width: 100%;
+    background: $darkGrey;
+    position: relative;
+}
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop() {
+        padding-top: 20px;
+    }
+}
+.footer-phone {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid $white;
+    h2, h3 {
+        color: $white;
+    }
+    h2 {
+        text-shadow: 1px 1px 1px $yellow;
+        @include desktop() {
+            font-size: 3rem;
+        }
+    }
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px 0;
+    ul {
+        list-style-type: none;
+        a {
+            color: $white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    @include desktop() {
+        // #menu-footer {
+            
+        // }
+        div ul {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            font-size: 1.5rem;
+            font-family: $h2;
+        }
+        // flex-direction: row;
+        // ul {
+        //     width: 100%;
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: space-around;
+        // }
+    }
+}
+// **************** end footer section - landing ******************

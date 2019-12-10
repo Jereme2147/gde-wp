@@ -25,6 +25,7 @@ function theme_prefix_register_menus() {
     register_nav_menus(
         array(
             'primary_menu' => __( 'Primary Menu', 'gde' ),
+            'footer_menu' => __('Footer Menu', 'gde'),
         )
     );
 }
