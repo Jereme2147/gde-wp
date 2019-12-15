@@ -2,7 +2,7 @@
         <footer>
             <div class="footer-container">
     <div class="footer-phone">
-        <h2>|828-963-6997|</h2>
+        <a href="tel:+1-828-963-6997"><h2>|828-963-6997|</h2></a>
         <h3>1234 hwy 105</h3>
         <h3>Foscoe NC, 28646</h3>
     </div>
