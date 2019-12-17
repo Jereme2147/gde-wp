@@ -1128,3 +1128,18 @@ p, h3, h4, h5 {
 .page-box blockquote {
   border-left: 5px solid #1c3f8c;
 }
+
+.social-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.social-icons img {
+  width: 75px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
