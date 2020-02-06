@@ -10,27 +10,6 @@
         <?php 
                 wp_nav_menu( array ( 'theme_location' => 'footer_menu' ) );
         ?>
-        <!-- <ul>
-            <li>
-                <h3><a href="#">Home</a></h3>
-            </li>
-            <li>
-                <h3><a href="#">What's in a Name</a></h3>
-            </li>
-            <li>
-                <h3><a href="#">Services</a></h3>
-            </li>
-            <li>
-                <h3><a href="#">Gallery</a></h3>
-            </li>
-            <li>
-                <h3><a href="#">Contact</a></h3>
-            </li>
-            <li>
-                <h3><a href="#">Blog</a></h3>
-            </li>
-            
-        </ul> -->
     </div>
     <div class="footer-dev">
 

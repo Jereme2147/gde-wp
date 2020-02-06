@@ -30,18 +30,28 @@ p, h3, h4, h5{
 .page-box {
     background: $white;
     border-radius: 3px;
-    @include desktop() {
+    @include desktop() { 
         margin-top: 125px;
     }
     margin: auto;
-    margin-top: 75px;
+    margin-top: 50px;
     max-width: 1000px;
     position: relative;
-    p, h2, h3 {
+    p,h3 {
         padding: 10px 5px;
         color: $darkGrey;
+        @include desktop(){
+            padding: 10px 20px;
+        }
     }
-    blockquote {
+    h1, h2 {
+        color: $blue;
+        padding: 10px 5px;
+        @include desktop() {
+            padding: 10px 20px;
+        }
+    }
+    blockquote { 
         border-left: 5px solid $blue;
     }
 }

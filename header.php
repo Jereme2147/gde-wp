@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800i,900i|Neuton:400,400i,700,800|Noto+Sans:400,700&display=swap" rel="stylesheet">
-    <link href="style.min.css" rel="stylesheet">
     <title>Glen Davis Electric</title>
     <?php wp_head(); ?>
 </head>

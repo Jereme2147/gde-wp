@@ -18,7 +18,6 @@ jQuery(document).ready(function($) {
     })
     let bannerDiv = $('.banner-div');
     if (bannerDiv.length){
-        console.log(bannerDiv);
         $(".banner-div").ready(function () {
             loadBanner();
         })

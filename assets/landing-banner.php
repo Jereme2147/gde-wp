@@ -1,6 +1,6 @@
 <img 
-    src="<?php echo get_template_directory_uri();?>/images/banners/landing-1900x1187.jpg" 
-    alt="rainbow banner"
+    src="<?php echo  get_template_directory_uri();?>/images/banners/landing-1900x1187.jpg" 
+    alt="rainbow banner"get_template_directory_uri()
     class="large-banner">
 <img 
     src="<?php echo get_template_directory_uri();?>/images/banners/landing-1900x910.jpg" 

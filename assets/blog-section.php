@@ -10,7 +10,7 @@
     ?>
     <div class="landing-blog-meta">
         <h2><?php echo the_title();?></h2>
-        <h3><?php echo get_the_author();?></h3>
+        <!-- <h3><?php// echo get_the_author();?></h3> -->
         <h4><?php echo get_the_date();?></h4>
     </div>
     <div class="landing-blog-content">
