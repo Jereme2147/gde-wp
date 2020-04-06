@@ -6,10 +6,12 @@
         require_once(plugin_dir_path(__FILE__) . '/assets/blog-banner.php');
     ?>
 </div>
+
 <!-- banner text -->
 <?php 
     require_once(plugin_dir_path(__FILE__) . '/assets/blog-banner-text.php');
 ?>
+<div class="content-section">
 <section >
 <?php
  $the_query = new WP_Query( array('posts_per_page'=>5,
@@ -24,7 +26,7 @@
                     <div class="blog-page-meta">
                         <p><?php echo get_the_date();?></p>
                         <h2><?php the_title();?></h2>
-                        <h3>Posted by <?php echo get_the_author();?></h3>
+                        <!-- <h3>Posted by <?php echo get_the_author();?></h3> -->
                     </div>
                     <div class="summary-content" id="summary-expand-<?php echo $blogNum ?>">
                         <!-- disappears on click -->

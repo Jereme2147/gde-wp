@@ -1,6 +1,7 @@
 
 <?php get_header() ?>
-<div class="page-box">
+<div class="content-section-company">
+<div class="page-box-company">
 
 <?php 
      while(have_posts()) {
@@ -9,4 +10,5 @@
      }
 ?>
 </div>
-<?php get_footer() ?>
+   <!-- </div> -->
+<?php get_footer() ?> 

@@ -10,15 +10,14 @@
     ?>
     <div class="landing-blog-meta">
         <h2><?php echo the_title();?></h2>
-        <!-- <h3><?php// echo get_the_author();?></h3> -->
         <h4><?php echo get_the_date();?></h4>
     </div>
     <div class="landing-blog-content">
-        <p>
+        <!-- <p> -->
             <?php
                 echo the_content();
             ?>
-        </p>
+        <!-- </p> -->
     </div>
     <div class="landing-blog-links">
         <a href="<?php echo site_url('/blog') ?>">
@@ -32,21 +31,12 @@
     $postCounter = $postCounter + 1;
     } else {
         break;
-            ?>
-            
-            <!-- <a href="<?php //echo the_permalink() ?>">
-               <div class="previous-blogs">
-                   <h4><?php //echo the_title() ?></h4>
-               </div>
-            </a> -->
-            
-            <?php
-            $postCounter = $postCounter + 1;
+           
     }
     
 }
     ?>   
-    </div>     
+<!-- </div>      -->
     <div class="pagination">
         <?php echo paginate_links(); ?>
     </div>

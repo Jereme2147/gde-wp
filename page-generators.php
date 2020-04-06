@@ -7,6 +7,8 @@
 <?php 
     require_once(plugin_dir_path(__FILE__) . '/assets/generators-banner-text.php');
 ?>
+
+<div class="content-section">
 <div class="page-box">
 
 <?php 
@@ -16,5 +18,5 @@
      }
 ?>
 </div>
-<!-- <h1>services</h1> -->
-<?php get_footer() ?>
+<!-- <div> -->
+<?php get_footer() ?> 

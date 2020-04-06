@@ -10,32 +10,32 @@
 </head>
 <body onscroll="scrollNum()">
     <div class="container">
-<nav id="navbar">
-    <div class="nav-box">
-        <div class="nav-title">
-            <h1>
-                <a href="<?php echo get_home_url(); ?>/">
-                    Glen Davis Electric
-                </a>
-            </h1>
-        </div>
-        <div class="desktop-menu">
-            <!-- <ul id="menu-ul"> -->
-            <?php 
-                wp_nav_menu( array ( 'theme_location' => 'primary_menu' ) );
-            ?>
-        </div> 
-        <div class="hamburger-div">
-            <button class="hamburger hamburger--spin" type="button">
-                <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-        <div class="mobile-menu">
-            <?php 
-                wp_nav_menu( array ( 'theme_location' => 'primary_menu' ) );
-            ?>
-        </div>
-    </div>
-</nav>
+        <nav id="navbar"> 
+            <div class="nav-box">
+                <div class="nav-title">
+                    <h1>
+                        <a href="<?php echo get_home_url(); ?>/">
+                            Glen Davis Electric
+                        </a>
+                    </h1>
+                </div>
+                <div class="desktop-menu">
+                    <!-- <ul id="menu-ul"> -->
+                    <?php 
+                        wp_nav_menu( array ( 'theme_location' => 'primary_menu' ) );
+                    ?>
+                </div> 
+                <div class="hamburger-div">
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="mobile-menu">
+                    <?php 
+                        wp_nav_menu( array ( 'theme_location' => 'primary_menu' ) );
+                    ?>
+                </div>
+            </div>
+        </nav>

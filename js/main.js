@@ -17,11 +17,11 @@ jQuery(document).ready(function($) {
         menu();
     })
     let bannerDiv = $('.banner-div');
-    if (bannerDiv.length){
-        $(".banner-div").ready(function () {
-            loadBanner();
-        })
-    }
+    // if (bannerDiv.length){
+    //     $(".banner-div").ready(function () {
+    //         loadBanner();
+    //     })
+    // }
     
 
     

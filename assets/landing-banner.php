@@ -14,3 +14,5 @@
     src="<?php echo get_template_directory_uri();?>/images/banners/landing-1900x788.jpg" 
     alt="rainbow banner"
     class="very-wide-banner">
+
+    

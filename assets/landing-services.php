@@ -2,6 +2,8 @@
  $the_query = new WP_Query( array(
                                 // 'posts_per_page'=>10,
                                 'post_type'=>'landing',
+                                'sort_column' => 'post_date', 
+                                'sort_order' => 'asc'
                                 // 'paged' => get_query_var('paged') ? get_query_var('paged') : 1) 
  )); 
  $landingPostCount = 2;

@@ -1,10 +1,10 @@
 /* 
 Theme Name: Glen.Davis.Electric
 Author: Jereme Daniels
-Author URI: http://jeremedaniels.com
+Author URI: http://jeremedaniels.com 
 Description: Custom theme for Glen.Davis.Electric
 Version: 1.0
-*/
+*/  
 @import './styles/reset.scss'; 
 @import './styles/hamburger.scss';
 @import './styles/landing.scss';
@@ -13,11 +13,11 @@ Version: 1.0
 
 // delete all below, just verifying connection and fonts. 
 h1 {
-    font-family: $h1;
+    font-family: $h1; 
 }
 h2 {
     font-family: $h2;
-}
+} 
 p, h3, h4, h5{
     font-family: $p;
 }
@@ -28,13 +28,17 @@ p, h3, h4, h5{
 }
 //***********standard page / what's in a name ****************
 .page-box {
+    // position: absolute;
+    margin: 50% auto 5px auto;
     background: $white;
     border-radius: 3px;
     @include desktop() { 
-        margin-top: 125px;
+        // margin-top: 125px;
+        // margin: 45% auto;
+        margin: 45% auto 5px auto;
     }
-    margin: auto;
-    margin-top: 50px;
+    // margin: auto; 
+    // margin-top: 50px;
     max-width: 1000px;
     position: relative;
     p,h3 {
@@ -55,8 +59,41 @@ p, h3, h4, h5{
         border-left: 5px solid $blue;
     }
 }
+
+//***********standard page / what's in a name ****************
+.page-box-company { 
+    // position: absolute;
+    margin: 25% auto; 
+    background: $white;
+    border-radius: 3px;
+    @include desktop() { 
+        // margin-top: 125px;
+        margin: 15% auto;
+    }      
+    // margin: auto;   
+    // margin-top: 50px;
+    max-width: 1000px;
+    position: relative;
+    p,h3 {
+        padding: 10px 5px;
+        color: $darkGrey;
+        @include desktop(){
+            padding: 10px 20px;
+        }
+    }
+    h1, h2 {
+        color: $blue;
+        padding: 10px 5px;
+        @include desktop() {
+            padding: 10px 20px;
+        }
+    }   
+    blockquote { 
+        border-left: 5px solid $blue;
+    } 
+}
 .social-icons {
-    display: flex;
+    display: flex;  
     width: 100%;
     justify-content: space-around;
     padding: 10px;

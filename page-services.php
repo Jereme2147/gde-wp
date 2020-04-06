@@ -7,7 +7,8 @@
 <?php 
     require_once(plugin_dir_path(__FILE__) . '/assets/services-banner-text.php');
 ?>
-<div class="page-box">
+<div class="content-section">
+<div class="page-box"> 
 
 <?php 
      while(have_posts()) {
@@ -16,5 +17,7 @@
      }
 ?>
 </div>
+<!-- </div> -->
+
 <!-- <h1>services</h1> -->
 <?php get_footer() ?>

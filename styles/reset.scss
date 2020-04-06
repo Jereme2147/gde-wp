@@ -16,7 +16,7 @@
         @content;
     }
 }
-@mixin small-desktop {
+@mixin small-desktop { 
     @media (min-width: 950px) and (max-width: 1060px) {
         @content;
     }
