@@ -3,8 +3,8 @@
                 <div class="footer-container">
                     <div class="footer-phone">
                         <a href="tel:+1-828-963-6997"><h2>|828-963-6997|</h2></a>
-                        <h3>1234 hwy 105</h3>
-                        <h3>Foscoe NC, 28646</h3>
+                        <h3>8742 NC HWY 105S</h3>
+                        <h3>Boone NC, 28607</h3>
                     </div>
                     <div class="footer-links">
                         <?php 
