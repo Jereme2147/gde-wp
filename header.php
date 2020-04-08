@@ -18,6 +18,9 @@
                             Glen Davis Electric
                         </a>
                     </h1>
+                    <p>
+                        Serving the High Country Since 1983
+                    </p>
                 </div>
                 <div class="desktop-menu">
                     <!-- <ul id="menu-ul"> -->

@@ -196,7 +196,16 @@ $p: 'Noto Sans', sans-serif;
     // color: $black;
     color: $darkGrey;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    p {
+        display: none;
+        @include desktop() {
+            display: block;
+            font-size: 1.3rem;
+        }
+        
+    }
     h1 a{
         color: $darkGrey;
         text-decoration: none;
@@ -320,7 +329,7 @@ $p: 'Noto Sans', sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h2{
+    h2{ 
         color: $darkGrey;
         text-align: center;
         width: 80%;
@@ -367,7 +376,9 @@ $p: 'Noto Sans', sans-serif;
     display: flex;
     flex-direction: column;
     border-top: 3px solid $blue;
+    border-bottom: 3px solid $blue;
     margin-top: 20px;
+    padding-bottom: 10px;
     h1 {
         color: $blue;
         text-align: center;
