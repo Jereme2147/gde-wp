@@ -91,6 +91,13 @@ $p: 'Noto Sans', sans-serif;
             font-size: 3rem;
         }
     }
+    h4 {
+        width:100%;
+        text-align: center;
+        color: $white;
+        font-size: 1.2rem;
+        text-shadow: 4px 4px 4px $black;
+    }
 }
 
 // **************** end Banner Div ******************
@@ -196,7 +203,7 @@ $p: 'Noto Sans', sans-serif;
     // color: $black;
     color: $darkGrey;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
     p {
         display: none;

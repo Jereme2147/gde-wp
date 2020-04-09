@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800i,900i|Neuton:400,400i,700,800|Noto+Sans:400,700&display=swap" rel="stylesheet">
     <title>Glen Davis Electric</title>
+    <meta name="description" content="Providing professional residential and commercial electricains for the High Country of North Carolina since 1983. Wataugu, Avery, Boone, Linville, Blowing Rock"
     <?php wp_head(); ?>
 </head>
 <body onscroll="scrollNum()">
@@ -18,9 +19,6 @@
                             Glen Davis Electric
                         </a>
                     </h1>
-                    <p>
-                        Serving the High Country Since 1983
-                    </p>
                 </div>
                 <div class="desktop-menu">
                     <!-- <ul id="menu-ul"> -->
@@ -29,7 +27,7 @@
                     ?>
                 </div> 
                 <div class="hamburger-div">
-                    <button class="hamburger hamburger--spin" type="button">
+                    <button class="hamburger hamburger--spin" type="button"aria-label="Menu toggle">
                         <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                         </span>

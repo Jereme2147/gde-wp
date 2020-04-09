@@ -3,7 +3,7 @@
     <?php 
         require_once(plugin_dir_path(__FILE__) . '/assets/landing-banner.php');
     ?>
-</div>
+</div> 
 <?php 
     require_once(plugin_dir_path(__FILE__) . '/assets/landing-banner-text.php');
 ?>

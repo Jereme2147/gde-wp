@@ -16,7 +16,7 @@ h1 {
     font-family: $h1; 
 }
 h2 {
-    font-family: $h2; 
+    font-family: $h2;  
 } 
 p, h3, h4, h5{ 
     font-family: $p;
@@ -31,14 +31,20 @@ p, h3, h4, h5{
     // position: absolute;
     margin: 50% auto 5px auto;
     background: $white;
-    border-radius: 3px;
-    @include desktop() { 
-        // margin-top: 125px;
-        // margin: 45% auto;
-        margin: 45% auto 5px auto;
+    border-radius: 3px;  
+    // @include desktop() { 
+    //     margin: 45% auto 5px auto;
+    // }
+    @include banner-desktop() {
+        margin: 65% auto 5px auto;
+    } 
+    @include large-desktop() {
+         margin: 50% auto 5px auto;
     }
-    // margin: auto; 
-    // margin-top: 50px;
+    @include x-large-desktop() {
+        margin: 45% auto 5px auto;
+    } 
+    
     max-width: 1000px;
     position: relative;
     p,h3 {
